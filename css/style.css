@@ -38,7 +38,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .container {
@@ -64,4 +64,52 @@ h2 {
 
 h3 {
     font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primaryDark);
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: var(--principalFont);
+    font-size: 2.2rem;
+}
+
+/* Navigation */
+.nav {
+    background-color: var(--primaryDark);
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    /* gap: 2rem; New way of separation. */
+}
+
+.nav__link {
+    color: var(--white);
+    font-size: 3rem;
+    font-family: var(--principalFont);
+    margin-right: 2rem;
+}
+
+.nav__link:last-of-type {
+    margin-right: 0;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    color: var(--secondary);
 }
